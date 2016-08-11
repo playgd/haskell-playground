@@ -20,13 +20,9 @@ remove_minor (x:xs) | (x == get_minor (x:xs)) = xs
                     | otherwise = x:(remove_minor xs)
 
 
-concat_minor :: [Int] -> [Int] -> [Int]
-concat_minor ol ul = ol ++ [get_minor ul]
-
-
 sort_aux :: [Int] -> [Int] -> [Int]
 sort_aux ol [] = ol
-sort_aux ol ul = sort_aux (concat_minor ol ul) (remove_minor ul)
+sort_aux ol ul = sort_aux (ol ++ [get_minor ul]) (remove_minor ul)
 
 
 sort :: [Int] -> [Int]
