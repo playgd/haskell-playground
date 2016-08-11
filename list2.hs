@@ -13,7 +13,6 @@ major (x:xs) | (x > major xs) = x
 
 
 all_odd :: [Int] -> Bool
-all_odd [] = False
-all_odd (x:xs) | (mod x 2 == 0) = True
-               | (mod x 2 /= 0) = False
+all_odd [] = True
+all_odd (x:xs) | (mod x 2 > 0) = False
                | otherwise = all_odd xs
