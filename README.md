@@ -10,5 +10,6 @@
 
 ## References to learn Haskell
 
-- http://haskell.tailorfontela.com.br/
-- https://www.udemy.com/curso-haskell/
+- http://learnyouahaskell.com/ [EN]
+- http://haskell.tailorfontela.com.br/ [PT-BR]
+- https://www.udemy.com/curso-haskell/ [PT-BR]
