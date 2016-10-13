@@ -1,4 +1,4 @@
--- Variáveis anônimas são representadas por underline
+-- Variáveis / valores anônimos são representadas por underline
 
 andy :: Bool -> Bool -> Bool
 andy False _ = False
